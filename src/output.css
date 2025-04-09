@@ -343,6 +343,15 @@
   .w-full {
     width: 100%;
   }
+  .max-w-0 {
+    max-width: calc(var(--spacing) * 0);
+  }
+  .max-w-30 {
+    max-width: calc(var(--spacing) * 30);
+  }
+  .max-w-31 {
+    max-width: calc(var(--spacing) * 31);
+  }
   .max-w-32 {
     max-width: calc(var(--spacing) * 32);
   }
@@ -559,6 +568,12 @@
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
   }
+  .pt-15 {
+    padding-top: calc(var(--spacing) * 15);
+  }
+  .pt-20 {
+    padding-top: calc(var(--spacing) * 20);
+  }
   .pr-6 {
     padding-right: calc(var(--spacing) * 6);
   }
@@ -573,6 +588,12 @@
   }
   .pb-10 {
     padding-bottom: calc(var(--spacing) * 10);
+  }
+  .pb-15 {
+    padding-bottom: calc(var(--spacing) * 15);
+  }
+  .pb-20 {
+    padding-bottom: calc(var(--spacing) * 20);
   }
   .pl-5 {
     padding-left: calc(var(--spacing) * 5);
