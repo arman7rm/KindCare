@@ -28,9 +28,9 @@
         </div>
 
         <!-- Header -->
-        <header class="hidden lg:grid grid-cols-5 grid-rows-2 items-center bg-white p-4 rounded-t-[35px]">
+        <header class="hidden lg:grid grid-cols-5 xl:max-w-[1200px] mx-auto  grid-rows-2 items-center bg-white py-4 rounded-t-[35px]">
             <div class="col-start-1 row-span-2 flex items-center">
-                <img src="kindcare.png" alt="KindCare Wellness Logo" class="h-60 max-w-full" />
+                <img src="kindcare.png" alt="KindCare Wellness Logo" class="h-50 max-w-full" />
             </div>
             <address class="col-start-5 col-span-1 text-[var(--primary)] row-start-1 flex flex-col items-end justify-end text-right text-sm not-italic">
                 <p><span class="font-semibold">Hours:</span> Mon-Fri | 9am-5pm</p>
@@ -41,12 +41,12 @@
             
             <!-- Desktop Navigation -->
             <nav class="col-start-2 col-span-4 row-start-2 hidden lg:flex justify-center items-center space-x-4 xl:space-x-10" aria-label="Main navigation">
-                <a href="index.html" class="text-[var(--primary)] text-lg xl:text-xl hover:rounded-[15px] hover:text-white hover:bg-[var(--primary)] px-2 py-2">Home</a>
+                <a href="index.html" class="text-[var(--primary)] text-lg xl:text-sm hover:rounded-[15px] hover:text-white hover:bg-[var(--primary)] px-2 py-2">Home</a>
                 
                 <!-- About Us Dropdown -->
                 <div class="relative group" role="none">
                     <div class="flex flex-col">
-                        <button id="about-menu-button" class="about-us-btn text-[var(--primary)] text-lg xl:text-xl rounded-tr-[35px] rounded-tl-[35px] px-3 xl:px-4 py-3 xl:py-4 flex items-center group-hover:text-white group-hover:bg-[var(--primary)] transition-colors duration-300" 
+                        <button id="about-menu-button" class="about-us-btn text-[var(--primary)]  xl:text-sm rounded-tr-[35px] rounded-tl-[35px] px-3 xl:px-4 py-3 xl:py-4 flex items-center group-hover:text-white group-hover:bg-[var(--primary)] transition-colors duration-300" 
                                 aria-expanded="false" aria-controls="about-menu" role="menuitem">
                             <span>About Us</span>
                             <span class="fas fa-angle-down px-2" aria-hidden="true"></span>
@@ -65,7 +65,7 @@
                 <!-- Services Dropdown -->
                 <div class="relative group" role="none">
                     <div class="flex flex-col">
-                        <button id="services-menu-button" class="about-us-btn text-[var(--primary)] text-lg xl:text-xl rounded-tr-[35px] rounded-tl-[35px] px-3 xl:px-4 py-3 xl:py-4 flex items-center group-hover:text-white group-hover:bg-[var(--primary)] transition-colors duration-300" 
+                        <button id="services-menu-button" class="about-us-btn text-[var(--primary)] text-lg xl:text-sm rounded-tr-[35px] rounded-tl-[35px] px-3 xl:px-4 py-3 xl:py-4 flex items-center group-hover:text-white group-hover:bg-[var(--primary)] transition-colors duration-300" 
                                 aria-expanded="false" aria-controls="services-menu" role="menuitem">
                             <span>Services</span>
                             <span class="fas fa-angle-down px-2" aria-hidden="true"></span>
@@ -81,9 +81,9 @@
                     </div>
                 </div>
                 
-                <a href="#blog" class="text-[var(--primary)] text-lg xl:text-xl hover:rounded-[15px] hover:text-white hover:bg-[var(--primary)] px-2 py-2">Blog</a>
-                <a href="#careers" class="text-[var(--primary)] text-lg xl:text-xl hover:rounded-[15px] hover:text-white hover:bg-[var(--primary)] px-2 py-2">Careers</a>
-                <a href="#contact" class="text-[var(--primary)] text-lg xl:text-xl hover:rounded-[15px] hover:text-white hover:bg-[var(--primary)] px-2 py-2">Contact Us</a>
+                <a href="#blog" class="text-[var(--primary)] text-lg xl:text-sm hover:rounded-[15px] hover:text-white hover:bg-[var(--primary)] px-2 py-2">Blog</a>
+                <a href="#careers" class="text-[var(--primary)] text-lg xl:text-sm hover:rounded-[15px] hover:text-white hover:bg-[var(--primary)] px-2 py-2">Careers</a>
+                <a href="#contact" class="text-[var(--primary)] text-lg xl:text-sm hover:rounded-[15px] hover:text-white hover:bg-[var(--primary)] px-2 py-2">Contact Us</a>
                 <a href="#register" class="bg-[var(--primary)] hover:bg-[var(--secondary)] text-white rounded-2xl px-4 xl:px-6 py-2 xl:py-3 text-sm xl:text-base transition-colors">
                     Request Consultation
                 </a>
@@ -210,7 +210,7 @@
         </main>
 
         <!-- Footer -->
-        <footer class="grid grid-cols-1 md:grid-cols-8 bg-white p-6 sm:p-8 md:p-12 rounded-t-[35px]">
+        <footer class="grid grid-cols-1 xl:max-w-[1200px] mx-auto md:grid-cols-12 bg-white pt-6 pb-6 sm:p-8 md:p-12 rounded-t-[35px]">
             <div class="flex flex-col md:col-span-3 mb-8 md:mb-0">
                 <h2 class="text-2xl sm:text-3xl text-[var(--primary)] mb-4">Follow Us:</h2>
                 <div class="flex space-x-4 sm:space-x-5 mb-6" aria-label="Social media links">
@@ -236,7 +236,7 @@
                 </div>
             </div>
 
-            <div class="flex flex-col md:col-span-1 md:col-start-6 space-y-2 mb-6 md:mb-0">
+            <div class="flex flex-col md:col-span-2 md:col-start-7 space-y-2 mb-6 md:mb-0 ">
                 <h3 class="font-semibold text-[var(--primary)]">Quick Links</h3>
                 <a href="#about" class="text-[var(--primary)] text-sm hover:text-[var(--secondary)] px-2 py-1">About Us</a>
                 <a href="#services" class="text-[var(--primary)] text-sm hover:text-[var(--secondary)] px-2 py-1">Services</a>
@@ -247,7 +247,7 @@
                 </a>
             </div>
 
-            <div class="flex flex-col md:col-span-1 md:col-start-7 space-y-2 mb-6 md:mb-0">
+            <div class="flex flex-col md:col-span-2 md:col-start-9 space-y-2 mb-6 md:mb-0">
                 <h3 class="font-semibold text-[var(--primary)]">Resources</h3>
                 <a href="#Contact" class="text-[var(--primary)] text-sm hover:text-[var(--secondary)] px-2 py-1">Contact Us</a>
                 <a href="#services" class="text-[var(--primary)] text-sm hover:text-[var(--secondary)] px-2 py-1">FAQs</a>
@@ -256,7 +256,7 @@
                 <a href="#blog" class="text-[var(--primary)] text-sm hover:text-[var(--secondary)] px-2 py-1">How To Pay For Home Care</a>
             </div>
 
-            <div class="flex flex-col md:col-span-1 md:col-start-8 space-y-2">
+            <div class="flex flex-col md:col-span-2 md:col-start-11 space-y-2">
                 <h3 class="font-semibold text-[var(--primary)]">Legal</h3>
                 <a href="#Contact" class="text-[var(--primary)] text-sm hover:text-[var(--secondary)] px-2 py-1">Compliance</a>
                 <a href="#services" class="text-[var(--primary)] text-sm hover:text-[var(--secondary)] px-2 py-1">Privacy Notice for Clients</a>
