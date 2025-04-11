@@ -39,6 +39,19 @@ This website was built using:
 - Simple, readable code structure for easy updates  
 
 ---
+## 🚀 Future Enhancements
+
+- **Dynamic Contact Form:** Integrate a user-friendly contact interface.
+- **Content Management:** Implement a CMS or backend for streamlined updates.
+- **Enhanced Accessibility:** Continuously improve accessibility features.
+- **SEO Optimization:** Fine-tune metadata and strategies for better search visibility.
+
+---
+
+## 🤝 Acknowledgments
+
+This project is built with care by [Mohamed Salam](https://github.com/arman7rm)—dedicated to those who care for others.
+---
 
 ## 📂 How to Use
 
@@ -52,15 +65,3 @@ git clone https://github.com/arman7rm/KindCare.git
 cd KindCare
 
 # Open index.html in your browser or use a live server plugin
-## 🚀 Future Enhancements
-
-- **Dynamic Contact Form:** Integrate a user-friendly contact interface.
-- **Content Management:** Implement a CMS or backend for streamlined updates.
-- **Enhanced Accessibility:** Continuously improve accessibility features.
-- **SEO Optimization:** Fine-tune metadata and strategies for better search visibility.
-
----
-
-## 🤝 Acknowledgments
-
-This project is built with care by [Mohamed Salam](https://github.com/arman7rm)—dedicated to those who care for others.
