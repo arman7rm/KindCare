@@ -50,7 +50,7 @@ This website was built using:
 
 ## 🤝 Acknowledgments
 
-This project is built with care by [Mohamed Salam](https://github.com/arman7rm)—dedicated to those who care for others.
+This project is built by [Mohamed Salam](https://github.com/arman7rm)—dedicated to those who care for others.
 ---
 
 ## 📂 How to Use
