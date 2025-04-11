@@ -49,7 +49,7 @@
             </address>
 
             <!-- Desktop Navigation -->
-            <nav  class="col-start-2 col-span-4 row-start-2 hidden lg:flex justify-center items-center space-x-4 xl:space-x-10"
+            <nav class="col-start-2 col-span-4 row-start-2 hidden lg:flex justify-center items-center space-x-4 xl:space-x-10"
                 aria-label="Main navigation">
                 <a href="index.html"
                     class="text-[var(--primary)] text-lg xl:text-sm hover:rounded-[15px] hover:text-white hover:bg-[var(--primary)] px-2 py-2">Home</a>
@@ -197,15 +197,16 @@
 
         <!-- Main Content -->
         <main id="main-content">
-            <section 
+            <section
                 class="bg-[var(--teal)] text-[var(--primary)] py-12 md:py-24 grid grid-cols-1 lg:grid-cols-7 gap-8 px-4 sm:px-8">
-                <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" 
-                data-aos-easing="ease-in-out" data-aos-once="true" class="lg:col-start-2 lg:col-span-2 shadow-2xl rounded-[20px] order-2 lg:order-1">
+                <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                    data-aos-once="true"
+                    class="lg:col-start-2 lg:col-span-2 shadow-2xl rounded-[20px] order-2 lg:order-1">
                     <img src="patient.png" alt="Smiling senior patient receiving care at home from a KindCare nurse"
                         class="rounded-[20px] w-full h-auto">
                 </div>
-                <article data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" 
-                data-aos-easing="ease-in-out" data-aos-once="true"
+                <article data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out" data-aos-once="true"
                     class="shadow-2xl lg:col-start-4 lg:col-span-3 flex flex-col items-center justify-center rounded-[20px] bg-[var(--white)] p-6 sm:p-8 md:p-12 lg:px-20 order-1 lg:order-2">
                     <h1
                         class="text-3xl sm:text-4xl md:text-4xl lg:text-2xl xl:text-6xl font-light mb-4 sm:mb-6 text-center">
@@ -221,37 +222,47 @@
 
             <!-- Services Section -->
             <section class="bg-[var(--lightgreen)] py-12 md:py-24 px-4 sm:px-8">
-                <h2 data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000"
-                data-aos-easing="ease-in-out" data-aos-once="true" class="text-xl sm:text-2xl md:text-3xl lg:text-3xl mb-2 text-center text-[var(--white)]">What We
+                <h2 data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                    data-aos-once="true"
+                    class="text-xl sm:text-2xl md:text-3xl lg:text-3xl mb-2 text-center text-[var(--white)]">What We
                     Offer</h3>
                     <h2 data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000"
                         class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light mb-8 sm:mb-16 text-center text-[var(--primary)]">
                         Our Services</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
                         <!-- Card 1 -->
-                        <article data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" 
-                            data-aos-easing="ease-in-out" data-aos-once="true"
-                            class="shadow-2xl bg-[var(--teal)] flex flex-col items-center justify-between rounded-[20px] overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl hover:z-10 focus-within:scale-105 focus-within:shadow-xl focus-within:z-10">
-                            <img src="hospice.png" alt="" class="w-full h-48 sm:h-56 object-cover">
-                            <div
-                                class="px-4 sm:px-5 py-6 sm:py-8 flex flex-col items-center text-[var(--primary)] text-center h-full">
-                                <h3 class="text-2xl sm:text-3xl md:text-4xl font-light mb-3 sm:mb-4">Hospice Care</h3>
-                                <p class="mb-6 sm:mb-8 flex-grow text-sm sm:text-base">
-                                    When a loved one faces a life-limiting illness, our team offers compassionate care
-                                    and
-                                    comfort—bringing peace, dignity, and support to every moment.
-                                </p>
-                                <a href="#"
-                                    class="bg-[var(--primary)] hover:bg-[var(--secondary)] text-white rounded-2xl px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base transition-colors w-max focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary)]">
-                                    Learn More <span class="sr-only">about Hospice Care</span>
-                                </a>
-                            </div>
-                        </article>
+                        <div class="contents">
+
+                            <article data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000"
+                                data-aos-easing="ease-in-out" data-aos-once="true" class="shadow-2xl bg-[var(--teal)] flex flex-col items-center justify-between rounded-[20px] overflow-hidden 
+    transition-all duration-500 ease-in-out transform origin-center hover:scale-105">
+
+                                <img src="hospice.png" alt="Hospice care services"
+                                    class="w-full h-48 sm:h-56 object-cover">
+
+                                <div
+                                    class="px-4 sm:px-5 py-6 sm:py-8 flex flex-col items-center text-[var(--primary)] text-center h-full">
+                                    <h3 class="text-2xl sm:text-3xl md:text-4xl font-light mb-3 sm:mb-4">Hospice Care
+                                    </h3>
+                                    <p class="mb-6 sm:mb-8 flex-grow text-sm sm:text-base">
+                                        When a loved one faces a life-limiting illness, our team offers compassionate
+                                        care and comfort—bringing peace, dignity, and support to every moment.
+                                    </p>
+                                    <a href="#"
+                                        class="bg-[var(--primary)] hover:bg-[var(--secondary)] text-white rounded-2xl px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base transition-colors w-max">
+                                        Learn More
+                                    </a>
+                                </div>
+
+                            </article>
+                        </div>
+
 
                         <!-- Card 2 -->
                         <article data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"
-                            data-aos-easing="ease-in-out" data-aos-once="true"
-                            class="shadow-2xl bg-[var(--teal)] flex flex-col items-center justify-between rounded-[20px] overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl hover:z-10 focus-within:scale-105 focus-within:shadow-xl focus-within:z-10">
+                            data-aos-easing="ease-in-out" data-aos-once="true" class="shadow-2xl bg-[var(--teal)] flex flex-col items-center justify-between rounded-[20px] overflow-hidden 
+              transition-all duration-500 ease-in-out transform
+              hover:scale-105">
                             <img src="Palliative.png" alt="" class="w-full h-48 sm:h-56 object-cover">
                             <div
                                 class="px-4 sm:px-5 py-6 sm:py-8 flex flex-col items-center text-[var(--primary)] text-center h-full">
@@ -273,8 +284,9 @@
 
                         <!-- Card 3 -->
                         <article data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000"
-                            data-aos-easing="ease-in-out" data-aos-once="true"
-                            class="shadow-2xl bg-[var(--teal)] flex flex-col items-center justify-between rounded-[20px] overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl hover:z-10 focus-within:scale-105 focus-within:shadow-xl focus-within:z-10">
+                            data-aos-easing="ease-in-out" data-aos-once="true" class="shadow-2xl bg-[var(--teal)] flex flex-col items-center justify-between rounded-[20px] overflow-hidden 
+              transition-all duration-500 ease-in-out transform
+              hover:scale-105">
                             <img src="home.png" alt="" class="w-full h-48 sm:h-56 object-cover">
                             <div
                                 class="px-4 sm:px-5 py-6 sm:py-8 flex flex-col items-center text-[var(--primary)] text-center h-full">
