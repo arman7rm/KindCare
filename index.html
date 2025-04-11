@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <script src="https://kit.fontawesome.com/90ad3f0578.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="m-0 p-0 bg-[var(--secondary)] font-['Montserrat_Alternates',_sans-serif]">
@@ -25,10 +25,44 @@
             <nav class="col-start-2 col-span-4 row-start-2 flex justify-center items-center space-x-10">
                 <a href="index.html"
                     class="text-[var(--primary)] text-xl hover:rounded-[15px] hover:text-white hover:bg-[var(--primary)]  px-2 py-2 ">Home</a>
-                <a href="#about"
-                    class="text-[var(--primary)] text-xl hover:rounded-[15px] hover:text-white hover:bg-[var(--primary)]  px-2 py-2 ">About</a>
-                <a href="#services"
-                    class="text-[var(--primary)] text-xl hover:rounded-[15px] hover:text-white hover:bg-[var(--primary)]  px-2 py-2 ">Services</a>
+                <div class="relative group inline-block">
+                    <div class="flex flex-col">
+                        <a href="#aboutus"
+                            class="about-us-btn text-[var(--primary)] text-xl rounded-tr-[35px] rounded-tl-[35px] px-4 py-4 flex items-center
+                                    group-hover:text-white group-hover:bg-[var(--primary)] transition-colors duration-300">
+                            <p>About Us</p>
+                            <i class="fa-solid fa-angle-down px-2"></i>
+                        </a>
+                        <div
+                            class="submenu hidden group-hover:block absolute top-full left-0 mt-1 w-max min-w-[20rem] px-6 py-6 bg-[var(--primary)] text-white rounded-bl-[35px] rounded-br-[35px] z-50">
+                            <ul>
+                                <li class="py-1"><a href="#autism" class="text-white hover:underline text-xl">Why KindCare?</a></li>
+                                <li class="py-1"><a href="#autism" class="text-white hover:underline text-xl">Our Leadership</a></li>
+                                <li class="py-1"><a href="#autism" class="text-white hover:underline text-xl">Compliance & Ethics</a></li>
+                                <li class="py-1"><a href="#autism" class="text-white hover:underline text-xl">Donate</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group inline-block">
+                    <div class="flex flex-col">
+                        <a href="#aboutus"
+                            class="about-us-btn text-[var(--primary)] text-xl rounded-tr-[35px] rounded-tl-[35px] px-4 py-4 flex items-center
+                                    group-hover:text-white group-hover:bg-[var(--primary)] transition-colors duration-300">
+                            <p>Services</p>
+                            <i class="fa-solid fa-angle-down px-2"></i>
+                        </a>
+                        <div
+                            class="submenu hidden group-hover:block absolute top-full left-0 mt-1 w-max min-w-[20rem] px-6 py-6 bg-[var(--primary)] text-white rounded-bl-[35px] rounded-br-[35px] z-50">
+                            <ul>
+                                <li class="py-1"><a href="#autism" class="text-white hover:underline text-xl">Autism</a></li>
+                                <li class="py-1"><a href="#autism" class="text-white hover:underline text-xl">Adults</a></li>
+                                <li class="py-1"><a href="#autism" class="text-white hover:underline text-xl">Senior Citizens</a></li>
+                                <li class="py-1"><a href="#autism" class="text-white hover:underline text-xl">Military and Federal</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <a href=" #blog"
                     class="text-[var(--primary)] text-xl hover:rounded-[15px] hover:text-white hover:bg-[var(--primary)]  px-2 py-2 ">Blog</a>
                 <a href="#careers"
@@ -95,7 +129,8 @@
                 <a href=" #blog"
                     class="text-[var(--primary)] text-sm hover:text-[var(--secondary)]  px-2 py-2 w-auto">Blog</a>
                 <a href="#careers"
-                    class="text-[var(--primary)] text-sm hover:text-[var(--secondary)]  px-2 py-2 w-auto">Careers</a>
+                    class="text-[var(--primary)] text-sm hover:text-[var(--secondary)]  px-2 py-2 w-auto">Join Our
+                    Team</a>
                 <a href="#register"
                     class="bg-[var(--primary)] hover:bg-[var(--secondary)] text-white rounded-2xl text-sm hover:rounded-[15px] hover:text-white]  px-2 py-2  max-w-32">
                     Register Today!
@@ -106,6 +141,10 @@
                     class="text-[var(--primary)] text-sm hover:text-[var(--secondary)]  px-2 py-2 w-auto">Contact Us</a>
                 <a href="#services"
                     class="text-[var(--primary)] text-sm hover:text-[var(--secondary)]  px-2 py-2 w-auto">FAQs</a>
+                <a href="#referrals"
+                    class="text-[var(--primary)] text-sm hover:text-[var(--secondary)]  px-2 py-2 w-auto">Employees</a>
+                <a href="#referrals"
+                    class="text-[var(--primary)] text-sm hover:text-[var(--secondary)]  px-2 py-2 w-auto">Referrals</a>
                 <a href=" #blog"
                     class="text-[var(--primary)] text-sm hover:text-[var(--secondary)]  px-2 py-2 w-auto">How To Pay For
                     Home Care</a>
@@ -123,6 +162,7 @@
             </div>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
