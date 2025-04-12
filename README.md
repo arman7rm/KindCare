@@ -64,4 +64,8 @@ git clone https://github.com/arman7rm/KindCare.git
 # Navigate into the project folder
 cd KindCare
 
-# Open index.html in your browser or use a live server plugin
+# Install dependencies
+npm i
+
+# Start Server
+npm start
