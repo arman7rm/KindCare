@@ -28,7 +28,7 @@
             <img src="./src/assets/kindcare.png" alt="KindCare Wellness Logo" class="h-16 sm:h-20 max-w-full" />
             <button id="mobile-menu-button" class="text-[var(--primary)] text-2xl p-2" aria-label="Menu"
                 aria-expanded="false" aria-controls="mobile-menu">
-                <span class="fas fa-bars" aria-hidden="true"></span>
+                <span class="mobile-menu-btn fas fa-bars" aria-hidden="true"></span>
             </button>
         </div>
 
@@ -126,7 +126,7 @@
         </header>
 
         <!-- Mobile Navigation Menu -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-white p-4 border-t" aria-hidden="true">
+        <div id="mobile-menu" class="hidden lg:hidden bg-white p-4" aria-hidden="true">
             <div class="text-[var(--primary)] text-sm mb-4">
                 <p><strong>Hours:</strong> Mon-Fri | 9am-5pm</p>
                 <p><strong>Location:</strong> Jersey City, NJ 07306</p>
@@ -202,7 +202,8 @@
                 <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out"
                     data-aos-once="true"
                     class="lg:col-start-2 lg:col-span-2 shadow-2xl rounded-[20px] order-2 lg:order-1">
-                    <img src="./src/assets/patient.png" alt="Smiling senior patient receiving care at home from a KindCare nurse"
+                    <img src="./src/assets/patient.png"
+                        alt="Smiling senior patient receiving care at home from a KindCare nurse"
                         class="rounded-[20px] w-full h-auto">
                 </div>
                 <article data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000"
@@ -226,7 +227,8 @@
                     data-aos-once="true"
                     class="text-xl sm:text-2xl md:text-3xl lg:text-3xl mb-2 text-center text-[var(--white)]">What We
                     Offer</h3>
-                    <h2 data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" data-aos-easing="ease-in-out"
+                    <h2 data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true"
+                        data-aos-easing="ease-in-out"
                         class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light mb-8 sm:mb-16 text-center text-[var(--primary)]">
                         Our Services</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
@@ -401,8 +403,10 @@
             const expanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
             mobileMenuButton.setAttribute('aria-expanded', !expanded);
             mobileMenuButton.setAttribute('aria-label', expanded ? 'Menu' : 'Close menu');
+            console.log("menu button clicked, toggling hidden now: ");
             mobileMenu.classList.toggle('hidden');
-            mobileMenu.setAttribute('aria-hidden', expanded);
+
+            mobileMenu.setAttribute('aria-hidden', !expanded);
         });
 
         // Mobile dropdown functionality
@@ -424,7 +428,10 @@
 
         // Close mobile menu when clicking outside
         document.addEventListener('click', (e) => {
-            if (!mobileMenu.contains(e.target) && e.target !== mobileMenuButton) {
+            const isMenuButton = e.target === mobileMenuButton || mobileMenuButton.contains(e.target);
+            const isMenuContent = mobileMenu.contains(e.target);
+
+            if (!isMenuButton && !isMenuContent) {
                 mobileMenuButton.setAttribute('aria-expanded', 'false');
                 mobileMenuButton.setAttribute('aria-label', 'Menu');
                 mobileMenu.classList.add('hidden');
