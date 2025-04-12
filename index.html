@@ -24,22 +24,41 @@
 
     <div class="mx-4 sm:mx-8 md:mx-12 my-4 sm:my-8 rounded-[35px] shadow-md overflow-hidden bg-white">
         <!-- Mobile Menu Button -->
-        <div class="lg:hidden flex justify-between items-center p-4 bg-white">
-            <img src="./src/assets/kindcare.png" alt="KindCare Wellness Logo" class="h-16 sm:h-20 max-w-full" />
-            <button id="mobile-menu-button" class="text-[var(--primary)] text-2xl p-2" aria-label="Menu"
-                aria-expanded="false" aria-controls="mobile-menu">
+        <div class="grid grid-cols-3 p-4 bg-white lg:hidden">
+            <!-- Empty first column -->
+            <div class="col-start-1"></div>
+            
+            <!-- Centered logo in second column -->
+            <div class="col-start-2 flex justify-center items-center">
+              <img 
+                src="./src/assets/kindcare.png" 
+                alt="KindCare Wellness Logo" 
+                class="h-30 max-w-full" 
+              />
+            </div>
+            
+            <!-- Menu button in third column -->
+            <div class="col-start-3 flex justify-end items-center">
+              <button 
+                id="mobile-menu-button" 
+                class="text-[var(--primary)] text-2xl p-2" 
+                aria-label="Menu"
+                aria-expanded="false" 
+                aria-controls="mobile-menu"
+              >
                 <span class="mobile-menu-btn fas fa-bars" aria-hidden="true"></span>
-            </button>
-        </div>
+              </button>
+            </div>
+          </div>
 
         <!-- Header -->
         <header
-            class="hidden lg:grid grid-cols-5 xl:max-w-[1200px] mx-auto  grid-rows-2 items-center bg-white py-4 rounded-t-[35px]">
+            class="hidden lg:grid grid-cols-6 xl:max-w-[1200px] mx-auto  grid-rows-2 items-center bg-white py-4 rounded-t-[35px]">
             <div class="col-start-1 row-span-2 flex items-center">
-                <img src="./src/assets/kindcare.png" alt="KindCare Wellness Logo" class="h-50 max-w-full" />
+                <img src="./src/assets/kindcare.png" alt="KindCare Wellness Logo" class="h-50 md:h-30 lg:h-45 max-w-full" />
             </div>
             <address
-                class="col-start-5 col-span-1 text-[var(--primary)] row-start-1 flex flex-col items-end justify-end text-right text-sm not-italic">
+                class="col-start-5 col-span-2 text-[var(--primary)] row-start-1 flex flex-col items-end justify-end text-right text-sm not-italic pr-4">
                 <p><span class="font-semibold">Hours:</span> Mon-Fri | 9am-5pm</p>
                 <p><span class="font-semibold">Location:</span> Jersey City, NJ 07306</p>
                 <p><span class="font-semibold">Phone:</span> <a href="tel:+12012341566" class="hover:underline">(201)
@@ -49,22 +68,22 @@
             </address>
 
             <!-- Desktop Navigation -->
-            <nav class="col-start-2 col-span-4 row-start-2 hidden lg:flex justify-center items-center space-x-4 xl:space-x-10"
+            <nav class="col-start-2 col-span-5 row-start-2 hidden lg:flex justify-center items-center space-x-4 xl:space-x-10 px-4"
                 aria-label="Main navigation">
                 <a href="index.html"
-                    class="text-[var(--primary)] text-lg xl:text-sm hover:rounded-[15px] hover:text-white hover:bg-[var(--primary)] px-2 py-2">Home</a>
+                    class="text-[var(--primary)] lg:text-xs text-lg xl:text-sm hover:rounded-[15px] hover:text-white hover:bg-[var(--primary)] px-2 py-2">Home</a>
 
                 <!-- About Us Dropdown -->
                 <div class="relative group" role="none">
                     <div class="flex flex-col">
                         <button id="about-menu-button"
-                            class="about-us-btn text-[var(--primary)]  xl:text-sm rounded-tr-[35px] rounded-tl-[35px] px-3 xl:px-4 py-3 xl:py-4 flex items-center group-hover:text-white group-hover:bg-[var(--primary)] transition-colors duration-300"
+                            class="about-us-btn text-[var(--primary)] lg:text-xs  xl:text-sm rounded-tr-[35px] rounded-tl-[35px] px-3 xl:px-4 py-3 xl:py-4 flex items-center group-hover:text-white group-hover:bg-[var(--primary)] transition-colors duration-300"
                             aria-expanded="false" aria-controls="about-menu" role="menuitem">
                             <span>About Us</span>
                             <span class="fas fa-angle-down px-2" aria-hidden="true"></span>
                         </button>
                         <div id="about-menu"
-                            class="submenu hidden group-hover:block absolute top-full left-0 mt-1 w-max min-w-[20rem] px-6 py-6 bg-[var(--primary)] text-white rounded-bl-[35px] rounded-br-[35px] z-50"
+                            class="submenu hidden lg:text-xs group-hover:block absolute top-full left-0 mt-1 w-max min-w-[20rem] px-6 py-6 bg-[var(--primary)] text-white rounded-bl-[35px] rounded-br-[35px] z-50"
                             role="menu" aria-labelledby="about-menu-button">
                             <ul role="none">
                                 <li role="none"><a href="#autism"
@@ -88,7 +107,7 @@
                 <div class="relative group" role="none">
                     <div class="flex flex-col">
                         <button id="services-menu-button"
-                            class="about-us-btn text-[var(--primary)] text-lg xl:text-sm rounded-tr-[35px] rounded-tl-[35px] px-3 xl:px-4 py-3 xl:py-4 flex items-center group-hover:text-white group-hover:bg-[var(--primary)] transition-colors duration-300"
+                            class="about-us-btn text-[var(--primary)] lg:text-xs text-lg xl:text-sm rounded-tr-[35px] rounded-tl-[35px] px-3 xl:px-4 py-3 xl:py-4 flex items-center group-hover:text-white group-hover:bg-[var(--primary)] transition-colors duration-300"
                             aria-expanded="false" aria-controls="services-menu" role="menuitem">
                             <span>Services</span>
                             <span class="fas fa-angle-down px-2" aria-hidden="true"></span>
@@ -112,14 +131,14 @@
                 </div>
 
                 <a href="#blog"
-                    class="text-[var(--primary)] text-lg xl:text-sm hover:rounded-[15px] hover:text-white hover:bg-[var(--primary)] px-2 py-2">Blog</a>
+                    class="text-[var(--primary)] lg:text-xs text-lg xl:text-sm hover:rounded-[15px] hover:text-white hover:bg-[var(--primary)] px-2 py-2">Blog</a>
                 <a href="#careers"
-                    class="text-[var(--primary)] text-lg xl:text-sm hover:rounded-[15px] hover:text-white hover:bg-[var(--primary)] px-2 py-2">Careers</a>
+                    class="text-[var(--primary)] lg:text-xs text-lg xl:text-sm hover:rounded-[15px] hover:text-white hover:bg-[var(--primary)] px-2 py-2">Careers</a>
                 <a href="#contact"
-                    class="text-[var(--primary)] text-lg xl:text-sm hover:rounded-[15px] hover:text-white hover:bg-[var(--primary)] px-2 py-2">Contact
+                    class="text-[var(--primary)] lg:text-xs text-lg xl:text-sm hover:rounded-[15px] hover:text-white hover:bg-[var(--primary)] px-2 py-2">Contact
                     Us</a>
                 <a href="#register"
-                    class="bg-[var(--primary)] hover:bg-[var(--secondary)] text-white rounded-2xl px-4 xl:px-6 py-2 xl:py-3 text-sm xl:text-base transition-colors">
+                    class="bg-[var(--primary)] lg:text-xs hover:bg-[var(--secondary)] text-white rounded-2xl px-4 xl:px-6 py-2 xl:py-3 text-sm xl:text-base transition-colors">
                     Request Consultation
                 </a>
             </nav>
