@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css",
     "watch:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "start": "concurrently \"npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch\" \"npx live-server\""
+    "start": "npx vite --open"
   },
   "keywords": [],
   "author": "",
