@@ -1,507 +1,821 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="KindCare Wellness provides compassionate hospice, palliative, and home health care services in Jersey City, NJ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="KindCare Wellness provides compassionate hospice, palliative, and home health care services in Jersey City, NJ"
+    />
     <title>KindCare Wellness - Compassionate Home Healthcare Services</title>
-    <link href="./src/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <script src="https://kit.fontawesome.com/90ad3f0578.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="./src/assets/favicon-32x32.png" type="image/png" sizes="32x32">
-    <link rel="icon" href="./src/assets/favicon-48x48.png" sizes="48x48">
-    <link rel="icon" href="./src/assets/favicon-64x64.png" sizes="64x64">
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-</head>
+    <link href="./src/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/90ad3f0578.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="icon"
+      href="./src/assets/favicon-32x32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link rel="icon" href="./src/assets/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" href="./src/assets/favicon-64x64.png" sizes="64x64" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  </head>
 
-<body class="m-0 p-0 bg-[var(--secondary)] font-['Montserrat_Alternates',_sans-serif]">
-    <a href="#main-content"
-        class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:bg-white focus:px-4 focus:py-2 focus:z-50 focus:rounded focus:font-bold focus:text-[var(--primary)]">Skip
-        to main content</a>
+  <body
+    class="m-0 bg-[var(--secondary)] p-0 font-['Montserrat_Alternates',_sans-serif]"
+  >
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:rounded focus:bg-white focus:px-4 focus:py-2 focus:font-bold focus:text-[var(--primary)]"
+      >Skip to main content</a
+    >
 
-    <div class="mx-4 sm:mx-8 md:mx-12 my-4 sm:my-8 rounded-[35px] shadow-md overflow-hidden bg-white">
-        <!-- Mobile Menu Button -->
-        <div class="grid grid-cols-3 p-4 bg-white lg:hidden">
-            <!-- Empty first column -->
-            <div class="col-start-1"></div>
-            
-            <!-- Centered logo in second column -->
-            <div class="col-start-2 flex justify-center items-center">
-              <img 
-                src="./src/assets/kindcare.png" 
-                alt="KindCare Wellness Logo" 
-                class="h-30 max-w-full" 
-              />
-            </div>
-            
-            <!-- Menu button in third column -->
-            <div class="col-start-3 flex justify-end items-center">
-              <button 
-                id="mobile-menu-button" 
-                class="text-[var(--primary)] text-2xl p-2" 
-                aria-label="Menu"
-                aria-expanded="false" 
-                aria-controls="mobile-menu"
+    <div
+      class="mx-4 my-4 overflow-hidden rounded-[35px] bg-white shadow-md sm:mx-8 sm:my-8 md:mx-12"
+    >
+      <!-- Mobile Menu Button -->
+      <div class="grid grid-cols-3 bg-white p-4 lg:hidden">
+        <!-- Empty first column -->
+        <div class="col-start-1"></div>
+
+        <!-- Centered logo in second column -->
+        <div class="col-start-2 flex items-center justify-center">
+          <img
+            src="./src/assets/kindcare.png"
+            alt="KindCare Wellness Logo"
+            class="h-30 max-w-full"
+          />
+        </div>
+
+        <!-- Menu button in third column -->
+        <div class="col-start-3 flex items-center justify-end">
+          <button
+            id="mobile-menu-button"
+            class="p-2 text-2xl text-[var(--primary)]"
+            aria-label="Menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <span class="mobile-menu-btn fas fa-bars" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Header -->
+      <header
+        class="mx-auto hidden grid-cols-6 grid-rows-2 items-center rounded-t-[35px] bg-white py-4 lg:grid xl:max-w-[1200px]"
+      >
+        <div class="col-start-1 row-span-2 flex items-center">
+          <img
+            src="./src/assets/kindcare.png"
+            alt="KindCare Wellness Logo"
+            class="h-50 max-w-full md:h-30 lg:h-45"
+          />
+        </div>
+        <address
+          class="col-span-2 col-start-5 row-start-1 flex flex-col items-end justify-end pr-4 text-right text-sm text-[var(--primary)] not-italic"
+        >
+          <p><span class="font-semibold">Hours:</span> Mon-Fri | 9am-5pm</p>
+          <p>
+            <span class="font-semibold">Location:</span> Jersey City, NJ 07306
+          </p>
+          <p>
+            <span class="font-semibold">Phone:</span>
+            <a href="tel:+12012341566" class="hover:underline"
+              >(201) 234-1566</a
+            >
+          </p>
+          <p>
+            <span class="font-semibold">Email:</span>
+            <a href="mailto:support@kindcare.com" class="hover:underline"
+              >support@kindcare.com</a
+            >
+          </p>
+        </address>
+
+        <!-- Desktop Navigation -->
+        <nav
+          class="col-span-5 col-start-2 row-start-2 hidden items-center justify-center space-x-4 px-4 lg:flex xl:space-x-10"
+          aria-label="Main navigation"
+        >
+          <a
+            href="index.html"
+            class="px-2 py-2 text-lg text-[var(--primary)] hover:rounded-[15px] hover:bg-[var(--primary)] hover:text-white lg:text-xs xl:text-sm"
+            >Home</a
+          >
+
+          <!-- About Us Dropdown -->
+          <div class="group relative" role="none">
+            <div class="flex flex-col">
+              <button
+                id="about-menu-button"
+                class="about-us-btn flex items-center rounded-tl-[35px] rounded-tr-[35px] px-3 py-3 text-[var(--primary)] transition-colors duration-300 group-hover:bg-[var(--primary)] group-hover:text-white lg:text-xs xl:px-4 xl:py-4 xl:text-sm"
+                aria-expanded="false"
+                aria-controls="about-menu"
+                role="menuitem"
               >
-                <span class="mobile-menu-btn fas fa-bars" aria-hidden="true"></span>
+                <span>About Us</span>
+                <span class="fas fa-angle-down px-2" aria-hidden="true"></span>
               </button>
+              <div
+                id="about-menu"
+                class="submenu absolute top-full left-0 z-50 mt-1 hidden w-max min-w-[20rem] rounded-br-[35px] rounded-bl-[35px] bg-[var(--primary)] px-6 py-6 text-white group-hover:block lg:text-xs"
+                role="menu"
+                aria-labelledby="about-menu-button"
+              >
+                <ul role="none">
+                  <li role="none">
+                    <a
+                      href="#autism"
+                      class="block py-1 text-lg text-white hover:underline xl:text-xl"
+                      role="menuitem"
+                      >Why KindCare?</a
+                    >
+                  </li>
+                  <li role="none">
+                    <a
+                      href="#autism"
+                      class="block py-1 text-lg text-white hover:underline xl:text-xl"
+                      role="menuitem"
+                      >Our Leadership</a
+                    >
+                  </li>
+                  <li role="none">
+                    <a
+                      href="#autism"
+                      class="block py-1 text-lg text-white hover:underline xl:text-xl"
+                      role="menuitem"
+                      >Compliance & Ethics</a
+                    >
+                  </li>
+                  <li role="none">
+                    <a
+                      href="#autism"
+                      class="block py-1 text-lg text-white hover:underline xl:text-xl"
+                      role="menuitem"
+                      >Donate</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 
-        <!-- Header -->
-        <header
-            class="hidden lg:grid grid-cols-6 xl:max-w-[1200px] mx-auto  grid-rows-2 items-center bg-white py-4 rounded-t-[35px]">
-            <div class="col-start-1 row-span-2 flex items-center">
-                <img src="./src/assets/kindcare.png" alt="KindCare Wellness Logo" class="h-50 md:h-30 lg:h-45 max-w-full" />
+          <!-- Services Dropdown -->
+          <div class="group relative" role="none">
+            <div class="flex flex-col">
+              <button
+                id="services-menu-button"
+                class="about-us-btn flex items-center rounded-tl-[35px] rounded-tr-[35px] px-3 py-3 text-lg text-[var(--primary)] transition-colors duration-300 group-hover:bg-[var(--primary)] group-hover:text-white lg:text-xs xl:px-4 xl:py-4 xl:text-sm"
+                aria-expanded="false"
+                aria-controls="services-menu"
+                role="menuitem"
+              >
+                <span>Services</span>
+                <span class="fas fa-angle-down px-2" aria-hidden="true"></span>
+              </button>
+              <div
+                id="services-menu"
+                class="submenu absolute top-full left-0 z-50 mt-1 hidden w-max min-w-[20rem] rounded-br-[35px] rounded-bl-[35px] bg-[var(--primary)] px-6 py-6 text-white group-hover:block"
+                role="menu"
+                aria-labelledby="services-menu-button"
+              >
+                <ul role="none">
+                  <li role="none">
+                    <a
+                      href="#autism"
+                      class="block py-1 text-lg text-white hover:underline xl:text-xl"
+                      role="menuitem"
+                      >Hospice Care</a
+                    >
+                  </li>
+                  <li role="none">
+                    <a
+                      href="#autism"
+                      class="block py-1 text-lg text-white hover:underline xl:text-xl"
+                      role="menuitem"
+                      >Palliative Care</a
+                    >
+                  </li>
+                  <li role="none">
+                    <a
+                      href="#autism"
+                      class="block py-1 text-lg text-white hover:underline xl:text-xl"
+                      role="menuitem"
+                      >Home Health Care</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-            <address
-                class="col-start-5 col-span-2 text-[var(--primary)] row-start-1 flex flex-col items-end justify-end text-right text-sm not-italic pr-4">
-                <p><span class="font-semibold">Hours:</span> Mon-Fri | 9am-5pm</p>
-                <p><span class="font-semibold">Location:</span> Jersey City, NJ 07306</p>
-                <p><span class="font-semibold">Phone:</span> <a href="tel:+12012341566" class="hover:underline">(201)
-                        234-1566</a></p>
-                <p><span class="font-semibold">Email:</span> <a href="mailto:support@kindcare.com"
-                        class="hover:underline">support@kindcare.com</a></p>
-            </address>
+          </div>
 
-            <!-- Desktop Navigation -->
-            <nav class="col-start-2 col-span-5 row-start-2 hidden lg:flex justify-center items-center space-x-4 xl:space-x-10 px-4"
-                aria-label="Main navigation">
-                <a href="index.html"
-                    class="text-[var(--primary)] lg:text-xs text-lg xl:text-sm hover:rounded-[15px] hover:text-white hover:bg-[var(--primary)] px-2 py-2">Home</a>
+          <a
+            href="#blog"
+            class="px-2 py-2 text-lg text-[var(--primary)] hover:rounded-[15px] hover:bg-[var(--primary)] hover:text-white lg:text-xs xl:text-sm"
+            >Blog</a
+          >
+          <a
+            href="#careers"
+            class="px-2 py-2 text-lg text-[var(--primary)] hover:rounded-[15px] hover:bg-[var(--primary)] hover:text-white lg:text-xs xl:text-sm"
+            >Careers</a
+          >
+          <a
+            href="#contact"
+            class="px-2 py-2 text-lg text-[var(--primary)] hover:rounded-[15px] hover:bg-[var(--primary)] hover:text-white lg:text-xs xl:text-sm"
+            >Contact Us</a
+          >
+          <a
+            href="#register"
+            class="rounded-2xl bg-[var(--primary)] px-4 py-2 text-sm text-white transition-colors hover:bg-[var(--secondary)] lg:text-xs xl:px-6 xl:py-3 xl:text-base"
+          >
+            Request Consultation
+          </a>
+        </nav>
+      </header>
 
-                <!-- About Us Dropdown -->
-                <div class="relative group" role="none">
-                    <div class="flex flex-col">
-                        <button id="about-menu-button"
-                            class="about-us-btn text-[var(--primary)] lg:text-xs  xl:text-sm rounded-tr-[35px] rounded-tl-[35px] px-3 xl:px-4 py-3 xl:py-4 flex items-center group-hover:text-white group-hover:bg-[var(--primary)] transition-colors duration-300"
-                            aria-expanded="false" aria-controls="about-menu" role="menuitem">
-                            <span>About Us</span>
-                            <span class="fas fa-angle-down px-2" aria-hidden="true"></span>
-                        </button>
-                        <div id="about-menu"
-                            class="submenu hidden lg:text-xs group-hover:block absolute top-full left-0 mt-1 w-max min-w-[20rem] px-6 py-6 bg-[var(--primary)] text-white rounded-bl-[35px] rounded-br-[35px] z-50"
-                            role="menu" aria-labelledby="about-menu-button">
-                            <ul role="none">
-                                <li role="none"><a href="#autism"
-                                        class="block text-white hover:underline text-lg xl:text-xl py-1"
-                                        role="menuitem">Why KindCare?</a></li>
-                                <li role="none"><a href="#autism"
-                                        class="block text-white hover:underline text-lg xl:text-xl py-1"
-                                        role="menuitem">Our Leadership</a></li>
-                                <li role="none"><a href="#autism"
-                                        class="block text-white hover:underline text-lg xl:text-xl py-1"
-                                        role="menuitem">Compliance & Ethics</a></li>
-                                <li role="none"><a href="#autism"
-                                        class="block text-white hover:underline text-lg xl:text-xl py-1"
-                                        role="menuitem">Donate</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Services Dropdown -->
-                <div class="relative group" role="none">
-                    <div class="flex flex-col">
-                        <button id="services-menu-button"
-                            class="about-us-btn text-[var(--primary)] lg:text-xs text-lg xl:text-sm rounded-tr-[35px] rounded-tl-[35px] px-3 xl:px-4 py-3 xl:py-4 flex items-center group-hover:text-white group-hover:bg-[var(--primary)] transition-colors duration-300"
-                            aria-expanded="false" aria-controls="services-menu" role="menuitem">
-                            <span>Services</span>
-                            <span class="fas fa-angle-down px-2" aria-hidden="true"></span>
-                        </button>
-                        <div id="services-menu"
-                            class="submenu hidden group-hover:block absolute top-full left-0 mt-1 w-max min-w-[20rem] px-6 py-6 bg-[var(--primary)] text-white rounded-bl-[35px] rounded-br-[35px] z-50"
-                            role="menu" aria-labelledby="services-menu-button">
-                            <ul role="none">
-                                <li role="none"><a href="#autism"
-                                        class="block text-white hover:underline text-lg xl:text-xl py-1"
-                                        role="menuitem">Hospice Care</a></li>
-                                <li role="none"><a href="#autism"
-                                        class="block text-white hover:underline text-lg xl:text-xl py-1"
-                                        role="menuitem">Palliative Care</a></li>
-                                <li role="none"><a href="#autism"
-                                        class="block text-white hover:underline text-lg xl:text-xl py-1"
-                                        role="menuitem">Home Health Care</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <a href="#blog"
-                    class="text-[var(--primary)] lg:text-xs text-lg xl:text-sm hover:rounded-[15px] hover:text-white hover:bg-[var(--primary)] px-2 py-2">Blog</a>
-                <a href="#careers"
-                    class="text-[var(--primary)] lg:text-xs text-lg xl:text-sm hover:rounded-[15px] hover:text-white hover:bg-[var(--primary)] px-2 py-2">Careers</a>
-                <a href="#contact"
-                    class="text-[var(--primary)] lg:text-xs text-lg xl:text-sm hover:rounded-[15px] hover:text-white hover:bg-[var(--primary)] px-2 py-2">Contact
-                    Us</a>
-                <a href="#register"
-                    class="bg-[var(--primary)] lg:text-xs hover:bg-[var(--secondary)] text-white rounded-2xl px-4 xl:px-6 py-2 xl:py-3 text-sm xl:text-base transition-colors">
-                    Request Consultation
-                </a>
-            </nav>
-        </header>
-
-        <!-- Mobile Navigation Menu -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-white p-4" aria-hidden="true">
-            <div class="text-[var(--primary)] text-sm mb-4">
-                <p><strong>Hours:</strong> Mon-Fri | 9am-5pm</p>
-                <p><strong>Location:</strong> Jersey City, NJ 07306</p>
-                <p><strong>Phone:</strong> <a href="tel:+12012341566" class="hover:underline">(201) 234-1566</a></p>
-                <p><strong>Email:</strong> <a href="mailto:support@kindcare.com"
-                        class="hover:underline">support@kindcare.com</a></p>
-            </div>
-
-            <nav class="flex flex-col space-y-2" aria-label="Mobile navigation">
-                <a href="index.html"
-                    class="text-[var(--primary)] text-lg hover:bg-gray-100 rounded-lg px-4 py-3">Home</a>
-
-                <!-- Mobile Dropdown - About Us -->
-                <div class="relative">
-                    <button
-                        class="mobile-dropdown-btn text-[var(--primary)] text-lg w-full text-left px-4 py-3 flex justify-between items-center hover:bg-gray-100 rounded-lg"
-                        aria-expanded="false" aria-controls="mobile-about-menu">
-                        <span>About Us</span>
-                        <span class="fas fa-chevron-down transition-transform duration-200" aria-hidden="true"></span>
-                    </button>
-                    <div id="mobile-about-menu" class="mobile-dropdown-content hidden pl-6">
-                        <a href="#autism"
-                            class="block text-[var(--primary)] text-base py-2 hover:bg-gray-100 rounded-lg px-4">Why
-                            KindCare?</a>
-                        <a href="#autism"
-                            class="block text-[var(--primary)] text-base py-2 hover:bg-gray-100 rounded-lg px-4">Our
-                            Leadership</a>
-                        <a href="#autism"
-                            class="block text-[var(--primary)] text-base py-2 hover:bg-gray-100 rounded-lg px-4">Compliance
-                            & Ethics</a>
-                        <a href="#autism"
-                            class="block text-[var(--primary)] text-base py-2 hover:bg-gray-100 rounded-lg px-4">Donate</a>
-                    </div>
-                </div>
-
-                <!-- Mobile Dropdown - Services -->
-                <div class="relative">
-                    <button
-                        class="mobile-dropdown-btn text-[var(--primary)] text-lg w-full text-left px-4 py-3 flex justify-between items-center hover:bg-gray-100 rounded-lg"
-                        aria-expanded="false" aria-controls="mobile-services-menu">
-                        <span>Services</span>
-                        <span class="fas fa-chevron-down transition-transform duration-200" aria-hidden="true"></span>
-                    </button>
-                    <div id="mobile-services-menu" class="mobile-dropdown-content hidden pl-6">
-                        <a href="#autism"
-                            class="block text-[var(--primary)] text-base py-2 hover:bg-gray-100 rounded-lg px-4">Hospice
-                            Care</a>
-                        <a href="#autism"
-                            class="block text-[var(--primary)] text-base py-2 hover:bg-gray-100 rounded-lg px-4">Palliative
-                            Care</a>
-                        <a href="#autism"
-                            class="block text-[var(--primary)] text-base py-2 hover:bg-gray-100 rounded-lg px-4">Home
-                            Health Care</a>
-                    </div>
-                </div>
-
-                <a href="#blog" class="text-[var(--primary)] text-lg hover:bg-gray-100 rounded-lg px-4 py-3">Blog</a>
-                <a href="#careers"
-                    class="text-[var(--primary)] text-lg hover:bg-gray-100 rounded-lg px-4 py-3">Careers</a>
-                <a href="#contact" class="text-[var(--primary)] text-lg hover:bg-gray-100 rounded-lg px-4 py-3">Contact
-                    Us</a>
-                <a href="#register"
-                    class="bg-[var(--primary)] hover:bg-[var(--secondary)] text-white rounded-lg px-4 py-3 text-center mt-2">
-                    Request Consultation
-                </a>
-            </nav>
+      <!-- Mobile Navigation Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden bg-white p-4 lg:hidden"
+        aria-hidden="true"
+      >
+        <div class="mb-4 text-sm text-[var(--primary)]">
+          <p><strong>Hours:</strong> Mon-Fri | 9am-5pm</p>
+          <p><strong>Location:</strong> Jersey City, NJ 07306</p>
+          <p>
+            <strong>Phone:</strong>
+            <a href="tel:+12012341566" class="hover:underline"
+              >(201) 234-1566</a
+            >
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:support@kindcare.com" class="hover:underline"
+              >support@kindcare.com</a
+            >
+          </p>
         </div>
 
-        <!-- Main Content -->
-        <main id="main-content">
-            <section
-                class="bg-[var(--teal)] text-[var(--primary)] py-12 md:py-24 grid grid-cols-1 lg:grid-cols-7 gap-8 px-4 sm:px-8">
-                <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out"
-                    data-aos-once="true"
-                    class="lg:col-start-2 lg:col-span-2 shadow-2xl rounded-[20px] order-2 lg:order-1">
-                    <img src="./src/assets/patient.png"
-                        alt="Smiling senior patient receiving care at home from a KindCare nurse"
-                        class="rounded-[20px] w-full h-auto">
+        <nav class="flex flex-col space-y-2" aria-label="Mobile navigation">
+          <a
+            href="index.html"
+            class="rounded-lg px-4 py-3 text-lg text-[var(--primary)] hover:bg-gray-100"
+            >Home</a
+          >
+
+          <!-- Mobile Dropdown - About Us -->
+          <div class="relative">
+            <button
+              class="mobile-dropdown-btn flex w-full items-center justify-between rounded-lg px-4 py-3 text-left text-lg text-[var(--primary)] hover:bg-gray-100"
+              aria-expanded="false"
+              aria-controls="mobile-about-menu"
+            >
+              <span>About Us</span>
+              <span
+                class="fas fa-chevron-down transition-transform duration-200"
+                aria-hidden="true"
+              ></span>
+            </button>
+            <div
+              id="mobile-about-menu"
+              class="mobile-dropdown-content hidden pl-6"
+            >
+              <a
+                href="#autism"
+                class="block rounded-lg px-4 py-2 text-base text-[var(--primary)] hover:bg-gray-100"
+                >Why KindCare?</a
+              >
+              <a
+                href="#autism"
+                class="block rounded-lg px-4 py-2 text-base text-[var(--primary)] hover:bg-gray-100"
+                >Our Leadership</a
+              >
+              <a
+                href="#autism"
+                class="block rounded-lg px-4 py-2 text-base text-[var(--primary)] hover:bg-gray-100"
+                >Compliance & Ethics</a
+              >
+              <a
+                href="#autism"
+                class="block rounded-lg px-4 py-2 text-base text-[var(--primary)] hover:bg-gray-100"
+                >Donate</a
+              >
+            </div>
+          </div>
+
+          <!-- Mobile Dropdown - Services -->
+          <div class="relative">
+            <button
+              class="mobile-dropdown-btn flex w-full items-center justify-between rounded-lg px-4 py-3 text-left text-lg text-[var(--primary)] hover:bg-gray-100"
+              aria-expanded="false"
+              aria-controls="mobile-services-menu"
+            >
+              <span>Services</span>
+              <span
+                class="fas fa-chevron-down transition-transform duration-200"
+                aria-hidden="true"
+              ></span>
+            </button>
+            <div
+              id="mobile-services-menu"
+              class="mobile-dropdown-content hidden pl-6"
+            >
+              <a
+                href="#autism"
+                class="block rounded-lg px-4 py-2 text-base text-[var(--primary)] hover:bg-gray-100"
+                >Hospice Care</a
+              >
+              <a
+                href="#autism"
+                class="block rounded-lg px-4 py-2 text-base text-[var(--primary)] hover:bg-gray-100"
+                >Palliative Care</a
+              >
+              <a
+                href="#autism"
+                class="block rounded-lg px-4 py-2 text-base text-[var(--primary)] hover:bg-gray-100"
+                >Home Health Care</a
+              >
+            </div>
+          </div>
+
+          <a
+            href="#blog"
+            class="rounded-lg px-4 py-3 text-lg text-[var(--primary)] hover:bg-gray-100"
+            >Blog</a
+          >
+          <a
+            href="#careers"
+            class="rounded-lg px-4 py-3 text-lg text-[var(--primary)] hover:bg-gray-100"
+            >Careers</a
+          >
+          <a
+            href="#contact"
+            class="rounded-lg px-4 py-3 text-lg text-[var(--primary)] hover:bg-gray-100"
+            >Contact Us</a
+          >
+          <a
+            href="#register"
+            class="mt-2 rounded-lg bg-[var(--primary)] px-4 py-3 text-center text-white hover:bg-[var(--secondary)]"
+          >
+            Request Consultation
+          </a>
+        </nav>
+      </div>
+
+      <!-- Main Content -->
+      <main id="main-content">
+        <section
+          class="grid grid-cols-1 gap-8 bg-[var(--teal)] px-4 py-12 text-[var(--primary)] sm:px-8 md:py-24 lg:grid-cols-7"
+        >
+          <div
+            data-aos="fade-right"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true"
+            class="order-2 rounded-[20px] shadow-2xl lg:order-1 lg:col-span-2 lg:col-start-2"
+          >
+            <img
+              src="./src/assets/patient.png"
+              alt="Smiling senior patient receiving care at home from a KindCare nurse"
+              class="h-auto w-full rounded-[20px]"
+            />
+          </div>
+          <article
+            data-aos="fade-left"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true"
+            class="order-1 flex flex-col items-center justify-center rounded-[20px] bg-[var(--white)] p-6 shadow-2xl sm:p-8 md:p-12 lg:order-2 lg:col-span-3 lg:col-start-4 lg:px-20"
+          >
+            <h1
+              class="mb-4 text-center text-3xl font-light sm:mb-6 sm:text-4xl md:text-4xl lg:text-2xl xl:text-6xl"
+            >
+              Compassionate healthcare, at home with you.
+            </h1>
+            <p
+              class="mb-6 text-center text-lg font-light sm:mb-8 sm:text-xl md:text-xl lg:text-xl"
+            >
+              Reliable care, thoughtful support, and a path forward—tailored to
+              you.
+            </p>
+            <a
+              href="#register"
+              class="rounded-2xl bg-[var(--primary)] px-6 py-3 text-base text-white transition-colors hover:bg-[var(--secondary)] focus:ring-2 focus:ring-[var(--primary)] focus:ring-offset-2 focus:outline-none"
+            >
+              Request Consultation
+            </a>
+          </article>
+        </section>
+
+        <!-- Services Section -->
+        <section class="bg-[var(--lightgreen)] px-4 py-12 sm:px-8 md:py-24">
+          <h3
+            data-aos="fade-down"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true"
+            class="mb-2 text-center text-xl text-[var(--white)] sm:text-2xl md:text-3xl lg:text-3xl"
+          >
+            What We Offer
+          </h3>
+
+          <h2
+            data-aos="fade-down"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+            data-aos-once="true"
+            data-aos-easing="ease-in-out"
+            class="mb-8 text-center text-3xl font-light text-[var(--primary)] sm:mb-16 sm:text-4xl md:text-5xl lg:text-6xl"
+          >
+            Our Services
+          </h2>
+          <div
+            class="mx-auto grid max-w-7xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+          >
+            <!-- Card 1 -->
+            <div class="contents">
+              <article
+                data-aos="fade-right"
+                data-aos-delay="200"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-once="true"
+                class="flex origin-center transform flex-col items-center justify-between overflow-hidden rounded-[20px] bg-[var(--teal)] shadow-2xl transition-all duration-500 ease-in-out hover:scale-105"
+              >
+                <img
+                  src="./src/assets/hospice.png"
+                  alt="Hospice care services"
+                  class="h-48 w-full object-cover sm:h-56"
+                />
+
+                <div
+                  class="flex h-full flex-col items-center px-4 py-6 text-center text-[var(--primary)] sm:px-5 sm:py-8"
+                >
+                  <h3
+                    class="mb-3 text-2xl font-light sm:mb-4 sm:text-3xl md:text-4xl"
+                  >
+                    Hospice Care
+                  </h3>
+                  <p class="mb-6 flex-grow text-sm sm:mb-8 sm:text-base">
+                    When a loved one faces a life-limiting illness, our team
+                    offers compassionate care and comfort—bringing peace,
+                    dignity, and support to every moment.
+                  </p>
+                  <a
+                    href="#"
+                    class="w-max rounded-2xl bg-[var(--primary)] px-4 py-2 text-sm text-white transition-colors hover:bg-[var(--secondary)] sm:px-6 sm:py-3 sm:text-base"
+                  >
+                    Learn More
+                  </a>
                 </div>
-                <article data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000"
-                    data-aos-easing="ease-in-out" data-aos-once="true"
-                    class="shadow-2xl lg:col-start-4 lg:col-span-3 flex flex-col items-center justify-center rounded-[20px] bg-[var(--white)] p-6 sm:p-8 md:p-12 lg:px-20 order-1 lg:order-2">
-                    <h1
-                        class="text-3xl sm:text-4xl md:text-4xl lg:text-2xl xl:text-6xl font-light mb-4 sm:mb-6 text-center">
-                        Compassionate healthcare, at home with you.</h1>
-                    <p class="text-lg sm:text-xl md:text-xl lg:text-xl font-light text-center mb-6 sm:mb-8">Reliable
-                        care, thoughtful support, and a path forward—tailored to you.</p>
-                    <a href="#register"
-                        class="bg-[var(--primary)] hover:bg-[var(--secondary)] text-white rounded-2xl px-6 py-3 text-base transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary)]">
-                        Request Consultation
-                    </a>
-                </article>
-            </section>
-
-            <!-- Services Section -->
-            <section class="bg-[var(--lightgreen)] py-12 md:py-24 px-4 sm:px-8">
-                <h2 data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out"
-                    data-aos-once="true"
-                    class="text-xl sm:text-2xl md:text-3xl lg:text-3xl mb-2 text-center text-[var(--white)]">What We
-                    Offer</h3>
-                    <h2 data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true"
-                        data-aos-easing="ease-in-out"
-                        class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light mb-8 sm:mb-16 text-center text-[var(--primary)]">
-                        Our Services</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-                        <!-- Card 1 -->
-                        <div class="contents">
-
-                            <article data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000"
-                                data-aos-easing="ease-in-out" data-aos-once="true" class="shadow-2xl bg-[var(--teal)] flex flex-col items-center justify-between rounded-[20px] overflow-hidden 
-    transition-all duration-500 ease-in-out transform origin-center hover:scale-105">
-
-                                <img src="./src/assets/hospice.png" alt="Hospice care services"
-                                    class="w-full h-48 sm:h-56 object-cover">
-
-                                <div
-                                    class="px-4 sm:px-5 py-6 sm:py-8 flex flex-col items-center text-[var(--primary)] text-center h-full">
-                                    <h3 class="text-2xl sm:text-3xl md:text-4xl font-light mb-3 sm:mb-4">Hospice Care
-                                    </h3>
-                                    <p class="mb-6 sm:mb-8 flex-grow text-sm sm:text-base">
-                                        When a loved one faces a life-limiting illness, our team offers compassionate
-                                        care and comfort—bringing peace, dignity, and support to every moment.
-                                    </p>
-                                    <a href="#"
-                                        class="bg-[var(--primary)] hover:bg-[var(--secondary)] text-white rounded-2xl px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base transition-colors w-max">
-                                        Learn More
-                                    </a>
-                                </div>
-
-                            </article>
-                        </div>
-
-
-                        <!-- Card 2 -->
-                        <article data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"
-                            data-aos-easing="ease-in-out" data-aos-once="true" class="shadow-2xl bg-[var(--teal)] flex flex-col items-center justify-between rounded-[20px] overflow-hidden 
-              transition-all duration-500 ease-in-out transform
-              hover:scale-105">
-                            <img src="./src/assets/Palliative.png" alt="" class="w-full h-48 sm:h-56 object-cover">
-                            <div
-                                class="px-4 sm:px-5 py-6 sm:py-8 flex flex-col items-center text-[var(--primary)] text-center h-full">
-                                <h3 class="text-2xl sm:text-3xl md:text-4xl font-light mb-3 sm:mb-4">Palliative Care
-                                </h3>
-                                <p class="mb-6 sm:mb-8 flex-grow text-sm sm:text-base">
-                                    Whether you're healing from surgery or managing a chronic condition, our skilled
-                                    nurses and
-                                    therapists provide personalized care—right at home—so you can focus on what matters
-                                    most:
-                                    feeling your best.
-                                </p>
-                                <a href="#"
-                                    class="bg-[var(--primary)] hover:bg-[var(--secondary)] text-white rounded-2xl px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base transition-colors w-max focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary)]">
-                                    Learn More <span class="sr-only">about Palliative Care</span>
-                                </a>
-                            </div>
-                        </article>
-
-                        <!-- Card 3 -->
-                        <article data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000"
-                            data-aos-easing="ease-in-out" data-aos-once="true" class="shadow-2xl bg-[var(--teal)] flex flex-col items-center justify-between rounded-[20px] overflow-hidden 
-              transition-all duration-500 ease-in-out transform
-              hover:scale-105">
-                            <img src="./src/assets/home.png" alt="" class="w-full h-48 sm:h-56 object-cover">
-                            <div
-                                class="px-4 sm:px-5 py-6 sm:py-8 flex flex-col items-center text-[var(--primary)] text-center h-full">
-                                <h3 class="text-2xl sm:text-3xl md:text-4xl font-light mb-3 sm:mb-4">Home Health Care
-                                </h3>
-                                <p class="mb-6 sm:mb-8 flex-grow text-sm sm:text-base">
-                                    For those facing a serious illness, our compassionate team provides expert care to
-                                    ease
-                                    symptoms and enhance quality of life.
-                                </p>
-                                <a href="#"
-                                    class="bg-[var(--primary)] hover:bg-[var(--secondary)] text-white rounded-2xl px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base transition-colors w-max focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary)]">
-                                    Learn More <span class="sr-only">about Home Health Care</span>
-                                </a>
-                            </div>
-                        </article>
-                    </div>
-            </section>
-        </main>
-
-        <!-- Footer -->
-        <footer
-            class="[@media(max-width:449px)]:pl-5 grid grid-cols-1 xl:max-w-[1200px] mx-auto md:grid-cols-12 bg-white pt-6 pb-6 sm:p-8 md:p-12 rounded-t-[35px]">
-            <div class="flex flex-col md:col-span-3 mb-8 md:mb-0">
-                <h2 class="text-2xl sm:text-3xl text-[var(--primary)] mb-4">Follow Us:</h2>
-                <div class="flex space-x-4 sm:space-x-5 mb-6" aria-label="Social media links">
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
-                        class="bg-[var(--secondary)] size-8 sm:size-10 flex items-center justify-center rounded-full text-white text-lg sm:text-xl hover:bg-[var(--primary)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary)]"
-                        aria-label="Facebook">
-                        <span class="fab fa-facebook-f" aria-hidden="true"></span>
-                    </a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
-                        class="bg-[var(--secondary)] size-8 sm:size-10 flex items-center justify-center rounded-full text-white text-lg sm:text-xl hover:bg-[var(--primary)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary)]"
-                        aria-label="Instagram">
-                        <span class="fab fa-instagram" aria-hidden="true"></span>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
-                        class="bg-[var(--secondary)] size-8 sm:size-10 flex items-center justify-center rounded-full text-white text-lg sm:text-xl hover:bg-[var(--primary)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary)]"
-                        aria-label="LinkedIn">
-                        <span class="fab fa-linkedin-in" aria-hidden="true"></span>
-                    </a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
-                        class="bg-[var(--secondary)] size-8 sm:size-10 flex items-center justify-center rounded-full text-white text-lg sm:text-xl hover:bg-[var(--primary)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary)]"
-                        aria-label="Twitter">
-                        <span class="fab fa-x-twitter" aria-hidden="true"></span>
-                    </a>
-                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"
-                        class="bg-[var(--secondary)] size-8 sm:size-10 flex items-center justify-center rounded-full text-white text-lg sm:text-xl hover:bg-[var(--primary)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary)]"
-                        aria-label="YouTube">
-                        <span class="fab fa-youtube" aria-hidden="true"></span>
-                    </a>
-                </div>
-                <div class="space-y-2 text-sm">
-                    <p>© KindCare, 2025. All Rights Reserved.</p>
-                    <p>KindCare is accredited by Community Health Accreditation Partner for meeting the industry's
-                        highest nationally recognized standards of care.</p>
-                </div>
+              </article>
             </div>
 
-            <div class="flex flex-col md:col-span-2 md:col-start-7 space-y-2 mb-6 md:mb-0 ">
-                <h3 class="font-semibold text-[var(--primary)]">Quick Links</h3>
-                <a href="#about" class="text-[var(--primary)] text-sm hover:text-[var(--secondary)] px-2 py-1">About
-                    Us</a>
-                <a href="#services"
-                    class="text-[var(--primary)] text-sm hover:text-[var(--secondary)] px-2 py-1">Services</a>
-                <a href="#blog" class="text-[var(--primary)] text-sm hover:text-[var(--secondary)] px-2 py-1">Blog</a>
-                <a href="#careers" class="text-[var(--primary)] text-sm hover:text-[var(--secondary)] px-2 py-1">Join
-                    Our Team</a>
-                <a href="#register"
-                    class="bg-[var(--primary)] hover:bg-[var(--secondary)] text-white rounded-2xl text-sm px-4 py-2 mt-2 w-max focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary)]">
-                    Request Consultation
+            <!-- Card 2 -->
+            <article
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-once="true"
+              class="flex transform flex-col items-center justify-between overflow-hidden rounded-[20px] bg-[var(--teal)] shadow-2xl transition-all duration-500 ease-in-out hover:scale-105"
+            >
+              <img
+                src="./src/assets/Palliative.png"
+                alt=""
+                class="h-48 w-full object-cover sm:h-56"
+              />
+              <div
+                class="flex h-full flex-col items-center px-4 py-6 text-center text-[var(--primary)] sm:px-5 sm:py-8"
+              >
+                <h3
+                  class="mb-3 text-2xl font-light sm:mb-4 sm:text-3xl md:text-4xl"
+                >
+                  Palliative Care
+                </h3>
+                <p class="mb-6 flex-grow text-sm sm:mb-8 sm:text-base">
+                  Whether you're healing from surgery or managing a chronic
+                  condition, our skilled nurses and therapists provide
+                  personalized care—right at home—so you can focus on what
+                  matters most: feeling your best.
+                </p>
+                <a
+                  href="#"
+                  class="w-max rounded-2xl bg-[var(--primary)] px-4 py-2 text-sm text-white transition-colors hover:bg-[var(--secondary)] focus:ring-2 focus:ring-[var(--primary)] focus:ring-offset-2 focus:outline-none sm:px-6 sm:py-3 sm:text-base"
+                >
+                  Learn More <span class="sr-only">about Palliative Care</span>
                 </a>
-            </div>
+              </div>
+            </article>
 
-            <div class="flex flex-col md:col-span-2 md:col-start-9 space-y-2 mb-6 md:mb-0">
-                <h3 class="font-semibold text-[var(--primary)]">Resources</h3>
-                <a href="#Contact" class="text-[var(--primary)] text-sm hover:text-[var(--secondary)] px-2 py-1">Contact
-                    Us</a>
-                <a href="#services"
-                    class="text-[var(--primary)] text-sm hover:text-[var(--secondary)] px-2 py-1">FAQs</a>
-                <a href="#referrals"
-                    class="text-[var(--primary)] text-sm hover:text-[var(--secondary)] px-2 py-1">Employees</a>
-                <a href="#referrals"
-                    class="text-[var(--primary)] text-sm hover:text-[var(--secondary)] px-2 py-1">Referrals</a>
-                <a href="#blog" class="text-[var(--primary)] text-sm hover:text-[var(--secondary)] px-2 py-1">How To Pay
-                    For Home Care</a>
-            </div>
+            <!-- Card 3 -->
+            <article
+              data-aos="fade-left"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-once="true"
+              class="flex transform flex-col items-center justify-between overflow-hidden rounded-[20px] bg-[var(--teal)] shadow-2xl transition-all duration-500 ease-in-out hover:scale-105"
+            >
+              <img
+                src="./src/assets/home.png"
+                alt=""
+                class="h-48 w-full object-cover sm:h-56"
+              />
+              <div
+                class="flex h-full flex-col items-center px-4 py-6 text-center text-[var(--primary)] sm:px-5 sm:py-8"
+              >
+                <h3
+                  class="mb-3 text-2xl font-light sm:mb-4 sm:text-3xl md:text-4xl"
+                >
+                  Home Health Care
+                </h3>
+                <p class="mb-6 flex-grow text-sm sm:mb-8 sm:text-base">
+                  For those facing a serious illness, our compassionate team
+                  provides expert care to ease symptoms and enhance quality of
+                  life.
+                </p>
+                <a
+                  href="#"
+                  class="w-max rounded-2xl bg-[var(--primary)] px-4 py-2 text-sm text-white transition-colors hover:bg-[var(--secondary)] focus:ring-2 focus:ring-[var(--primary)] focus:ring-offset-2 focus:outline-none sm:px-6 sm:py-3 sm:text-base"
+                >
+                  Learn More <span class="sr-only">about Home Health Care</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
 
-            <div class="flex flex-col md:col-span-2 md:col-start-11 space-y-2">
-                <h3 class="font-semibold text-[var(--primary)]">Legal</h3>
-                <a href="#Contact"
-                    class="text-[var(--primary)] text-sm hover:text-[var(--secondary)] px-2 py-1">Compliance</a>
-                <a href="#services"
-                    class="text-[var(--primary)] text-sm hover:text-[var(--secondary)] px-2 py-1">Privacy Notice for
-                    Clients</a>
-                <a href="#blog" class="text-[var(--primary)] text-sm hover:text-[var(--secondary)] px-2 py-1">HIPAA</a>
-                <a href="#blog" class="text-[var(--primary)] text-sm hover:text-[var(--secondary)] px-2 py-1">Ethics and
-                    Safety</a>
-            </div>
-        </footer>
+      <!-- Footer -->
+      <footer
+        class="mx-auto grid grid-cols-1 rounded-t-[35px] bg-white pt-6 pb-6 sm:p-8 md:grid-cols-12 md:p-12 xl:max-w-[1200px] [@media(max-width:449px)]:pl-5"
+      >
+        <div class="mb-8 flex flex-col md:col-span-3 md:mb-0">
+          <h2 class="mb-4 text-2xl text-[var(--primary)] sm:text-3xl">
+            Follow Us:
+          </h2>
+          <div
+            class="mb-6 flex space-x-4 sm:space-x-5"
+            aria-label="Social media links"
+          >
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex size-8 items-center justify-center rounded-full bg-[var(--secondary)] text-lg text-white hover:bg-[var(--primary)] focus:ring-2 focus:ring-[var(--primary)] focus:ring-offset-2 focus:outline-none sm:size-10 sm:text-xl"
+              aria-label="Facebook"
+            >
+              <span class="fab fa-facebook-f" aria-hidden="true"></span>
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex size-8 items-center justify-center rounded-full bg-[var(--secondary)] text-lg text-white hover:bg-[var(--primary)] focus:ring-2 focus:ring-[var(--primary)] focus:ring-offset-2 focus:outline-none sm:size-10 sm:text-xl"
+              aria-label="Instagram"
+            >
+              <span class="fab fa-instagram" aria-hidden="true"></span>
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex size-8 items-center justify-center rounded-full bg-[var(--secondary)] text-lg text-white hover:bg-[var(--primary)] focus:ring-2 focus:ring-[var(--primary)] focus:ring-offset-2 focus:outline-none sm:size-10 sm:text-xl"
+              aria-label="LinkedIn"
+            >
+              <span class="fab fa-linkedin-in" aria-hidden="true"></span>
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex size-8 items-center justify-center rounded-full bg-[var(--secondary)] text-lg text-white hover:bg-[var(--primary)] focus:ring-2 focus:ring-[var(--primary)] focus:ring-offset-2 focus:outline-none sm:size-10 sm:text-xl"
+              aria-label="Twitter"
+            >
+              <span class="fab fa-x-twitter" aria-hidden="true"></span>
+            </a>
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex size-8 items-center justify-center rounded-full bg-[var(--secondary)] text-lg text-white hover:bg-[var(--primary)] focus:ring-2 focus:ring-[var(--primary)] focus:ring-offset-2 focus:outline-none sm:size-10 sm:text-xl"
+              aria-label="YouTube"
+            >
+              <span class="fab fa-youtube" aria-hidden="true"></span>
+            </a>
+          </div>
+          <div class="space-y-2 text-sm">
+            <p>© KindCare, 2025. All Rights Reserved.</p>
+            <p>
+              KindCare is accredited by Community Health Accreditation Partner
+              for meeting the industry's highest nationally recognized standards
+              of care.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="mb-6 flex flex-col space-y-2 md:col-span-2 md:col-start-7 md:mb-0"
+        >
+          <h3 class="font-semibold text-[var(--primary)]">Quick Links</h3>
+          <a
+            href="#about"
+            class="px-2 py-1 text-sm text-[var(--primary)] hover:text-[var(--secondary)]"
+            >About Us</a
+          >
+          <a
+            href="#services"
+            class="px-2 py-1 text-sm text-[var(--primary)] hover:text-[var(--secondary)]"
+            >Services</a
+          >
+          <a
+            href="#blog"
+            class="px-2 py-1 text-sm text-[var(--primary)] hover:text-[var(--secondary)]"
+            >Blog</a
+          >
+          <a
+            href="#careers"
+            class="px-2 py-1 text-sm text-[var(--primary)] hover:text-[var(--secondary)]"
+            >Join Our Team</a
+          >
+          <a
+            href="#register"
+            class="mt-2 w-max rounded-2xl bg-[var(--primary)] px-4 py-2 text-sm text-white hover:bg-[var(--secondary)] focus:ring-2 focus:ring-[var(--primary)] focus:ring-offset-2 focus:outline-none"
+          >
+            Request Consultation
+          </a>
+        </div>
+
+        <div
+          class="mb-6 flex flex-col space-y-2 md:col-span-2 md:col-start-9 md:mb-0"
+        >
+          <h3 class="font-semibold text-[var(--primary)]">Resources</h3>
+          <a
+            href="#Contact"
+            class="px-2 py-1 text-sm text-[var(--primary)] hover:text-[var(--secondary)]"
+            >Contact Us</a
+          >
+          <a
+            href="#services"
+            class="px-2 py-1 text-sm text-[var(--primary)] hover:text-[var(--secondary)]"
+            >FAQs</a
+          >
+          <a
+            href="#referrals"
+            class="px-2 py-1 text-sm text-[var(--primary)] hover:text-[var(--secondary)]"
+            >Employees</a
+          >
+          <a
+            href="#referrals"
+            class="px-2 py-1 text-sm text-[var(--primary)] hover:text-[var(--secondary)]"
+            >Referrals</a
+          >
+          <a
+            href="#blog"
+            class="px-2 py-1 text-sm text-[var(--primary)] hover:text-[var(--secondary)]"
+            >How To Pay For Home Care</a
+          >
+        </div>
+
+        <div class="flex flex-col space-y-2 md:col-span-2 md:col-start-11">
+          <h3 class="font-semibold text-[var(--primary)]">Legal</h3>
+          <a
+            href="#Contact"
+            class="px-2 py-1 text-sm text-[var(--primary)] hover:text-[var(--secondary)]"
+            >Compliance</a
+          >
+          <a
+            href="#services"
+            class="px-2 py-1 text-sm text-[var(--primary)] hover:text-[var(--secondary)]"
+            >Privacy Notice for Clients</a
+          >
+          <a
+            href="#blog"
+            class="px-2 py-1 text-sm text-[var(--primary)] hover:text-[var(--secondary)]"
+            >HIPAA</a
+          >
+          <a
+            href="#blog"
+            class="px-2 py-1 text-sm text-[var(--primary)] hover:text-[var(--secondary)]"
+            >Ethics and Safety</a
+          >
+        </div>
+      </footer>
     </div>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
     <script>
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
+      // Mobile menu toggle
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
 
-        mobileMenuButton.addEventListener('click', () => {
-            const expanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
-            mobileMenuButton.setAttribute('aria-expanded', !expanded);
-            mobileMenuButton.setAttribute('aria-label', expanded ? 'Menu' : 'Close menu');
-            console.log("menu button clicked, toggling hidden now: ");
-            mobileMenu.classList.toggle('hidden');
+      mobileMenuButton.addEventListener("click", () => {
+        const expanded =
+          mobileMenuButton.getAttribute("aria-expanded") === "true";
+        mobileMenuButton.setAttribute("aria-expanded", !expanded);
+        mobileMenuButton.setAttribute(
+          "aria-label",
+          expanded ? "Menu" : "Close menu",
+        );
+        console.log("menu button clicked, toggling hidden now: ");
+        mobileMenu.classList.toggle("hidden");
 
-            mobileMenu.setAttribute('aria-hidden', !expanded);
+        mobileMenu.setAttribute("aria-hidden", !expanded);
+      });
+
+      // Mobile dropdown functionality
+      const dropdownButtons = document.querySelectorAll(".mobile-dropdown-btn");
+
+      dropdownButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const dropdownId = button.getAttribute("aria-controls");
+          const dropdown = document.getElementById(dropdownId);
+          const icon = button.querySelector('span[aria-hidden="true"]');
+          const expanded = button.getAttribute("aria-expanded") === "true";
+
+          button.setAttribute("aria-expanded", !expanded);
+          dropdown.classList.toggle("hidden");
+          icon.classList.toggle("fa-chevron-down");
+          icon.classList.toggle("fa-chevron-up");
         });
+      });
 
-        // Mobile dropdown functionality
-        const dropdownButtons = document.querySelectorAll('.mobile-dropdown-btn');
+      // Close mobile menu when clicking outside
+      document.addEventListener("click", (e) => {
+        const isMenuButton =
+          e.target === mobileMenuButton || mobileMenuButton.contains(e.target);
+        const isMenuContent = mobileMenu.contains(e.target);
 
-        dropdownButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const dropdownId = button.getAttribute('aria-controls');
-                const dropdown = document.getElementById(dropdownId);
-                const icon = button.querySelector('span[aria-hidden="true"]');
-                const expanded = button.getAttribute('aria-expanded') === 'true';
+        if (!isMenuButton && !isMenuContent) {
+          mobileMenuButton.setAttribute("aria-expanded", "false");
+          mobileMenuButton.setAttribute("aria-label", "Menu");
+          mobileMenu.classList.add("hidden");
+          mobileMenu.setAttribute("aria-hidden", "true");
 
-                button.setAttribute('aria-expanded', !expanded);
-                dropdown.classList.toggle('hidden');
-                icon.classList.toggle('fa-chevron-down');
-                icon.classList.toggle('fa-chevron-up');
+          // Also close any open dropdowns
+          document
+            .querySelectorAll(".mobile-dropdown-content")
+            .forEach((dropdown) => {
+              dropdown.classList.add("hidden");
             });
-        });
 
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', (e) => {
-            const isMenuButton = e.target === mobileMenuButton || mobileMenuButton.contains(e.target);
-            const isMenuContent = mobileMenu.contains(e.target);
+          // Reset all dropdown icons and states
+          document.querySelectorAll(".mobile-dropdown-btn").forEach((btn) => {
+            btn.setAttribute("aria-expanded", "false");
+            const icon = btn.querySelector('span[aria-hidden="true"]');
+            icon.classList.remove("fa-chevron-up");
+            icon.classList.add("fa-chevron-down");
+          });
+        }
+      });
 
-            if (!isMenuButton && !isMenuContent) {
-                mobileMenuButton.setAttribute('aria-expanded', 'false');
-                mobileMenuButton.setAttribute('aria-label', 'Menu');
-                mobileMenu.classList.add('hidden');
-                mobileMenu.setAttribute('aria-hidden', 'true');
+      // Keyboard navigation for dropdowns
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          mobileMenuButton.setAttribute("aria-expanded", "false");
+          mobileMenuButton.setAttribute("aria-label", "Menu");
+          mobileMenu.classList.add("hidden");
+          mobileMenu.setAttribute("aria-hidden", "true");
+        }
+      });
 
-                // Also close any open dropdowns
-                document.querySelectorAll('.mobile-dropdown-content').forEach(dropdown => {
-                    dropdown.classList.add('hidden');
-                });
+      // Focus trap for mobile menu
+      const focusableElements =
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
+      const focusableContent = mobileMenu.querySelectorAll(focusableElements);
+      const firstFocusableElement = focusableContent[0];
+      const lastFocusableElement =
+        focusableContent[focusableContent.length - 1];
 
-                // Reset all dropdown icons and states
-                document.querySelectorAll('.mobile-dropdown-btn').forEach(btn => {
-                    btn.setAttribute('aria-expanded', 'false');
-                    const icon = btn.querySelector('span[aria-hidden="true"]');
-                    icon.classList.remove('fa-chevron-up');
-                    icon.classList.add('fa-chevron-down');
-                });
+      mobileMenu.addEventListener("keydown", function (e) {
+        if (e.key === "Tab") {
+          if (e.shiftKey) {
+            if (document.activeElement === firstFocusableElement) {
+              lastFocusableElement.focus();
+              e.preventDefault();
             }
-        });
-
-        // Keyboard navigation for dropdowns
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                mobileMenuButton.setAttribute('aria-expanded', 'false');
-                mobileMenuButton.setAttribute('aria-label', 'Menu');
-                mobileMenu.classList.add('hidden');
-                mobileMenu.setAttribute('aria-hidden', 'true');
+          } else {
+            if (document.activeElement === lastFocusableElement) {
+              firstFocusableElement.focus();
+              e.preventDefault();
             }
-        });
-
-        // Focus trap for mobile menu
-        const focusableElements = 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
-        const focusableContent = mobileMenu.querySelectorAll(focusableElements);
-        const firstFocusableElement = focusableContent[0];
-        const lastFocusableElement = focusableContent[focusableContent.length - 1];
-
-        mobileMenu.addEventListener('keydown', function (e) {
-            if (e.key === 'Tab') {
-                if (e.shiftKey) {
-                    if (document.activeElement === firstFocusableElement) {
-                        lastFocusableElement.focus();
-                        e.preventDefault();
-                    }
-                } else {
-                    if (document.activeElement === lastFocusableElement) {
-                        firstFocusableElement.focus();
-                        e.preventDefault();
-                    }
-                }
-            }
-        });
+          }
+        }
+      });
     </script>
-</body>
-
+  </body>
 </html>
